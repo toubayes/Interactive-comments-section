@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Pull dynamic content from the data.json file -->
+   <main class="comments">
+    <div class="container">
+      <div class="comment">
+        <div class="reactions">
+          <div class="likes">
+             <div class="counter">
+              <p class="plus">+</p>
+              <p class="score">12</p>
+              <p class="moins">-</p>
+             </div>
+          </div>
+          <div class="comment-content">
+            <div class="head-comment">
+              <div class="time-comment">
+               <img src="images/avatars/image-juliusomo.webp" class="avatar"  alt="">
+               <h3 class="name-comment">Lorem, ipsum dolor.</h3>
+               <span class="time-posted">3 munites ago</span>
+              </div>
+              <div class="actions">
+             <button class="replycomment"><img src="images/icon-reply.svg" alt="reply icon">Replay</button>
+              </div>
+            </div>
+            <div class="body_comment">
+              <p class="text-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed non dolorem recusandae libero magni eius, omnis, iusto, harum cum tenetur minus inventore consequatur quae aspernatur soluta officiis cumque id sunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reply-comment-container"></div>
+      <div class="comment">
+        <div class="reactions">
+          <div class="likes">
+             <div class="counter">
+              <p class="plus">+</p>
+              <p class="score">12</p>
+              <p class="moins">-</p>
+             </div>
+          </div>
+          <div class="comment-content">
+            <div class="head-comment">
+              <div class="time-comment">
+               <img src="images/avatars/image-juliusomo.webp" class="avatar" alt="">
+               <h3 class="name-comment">Lorem, ipsum dolor.</h3>
+               <span class="time-posted">3 munites ago</span>
+              </div>
+              <div class="actions">
+             <button class="replycomment"><img src="images/icon-reply.svg" alt="reply icon">Replay</button>
+              </div>
+            </div>
+            <div class="body_comment">
+              <p class="text-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed non dolorem recusandae libero magni eius, omnis, iusto, harum cum tenetur minus inventore consequatur quae aspernatur soluta officiis cumque id sunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="replying-comment">
+        <div class="line"></div>
+        <div class="reply">
+          <div class="comment">
+            <div class="reactions">
+              <div class="likes">
+                 <div class="counter">
+                  <p class="plus">+</p>
+                  <p class="score">12</p>
+                  <p class="moins">-</p>
+                 </div>
+              </div>
+              <div class="comment-content">
+                <div class="head-comment">
+                  <div class="time-comment">
+                   <img src="images/avatars/image-juliusomo.webp" class="avatar" alt="avatar user">
+                   <h3 class="name-comment">Lorem, ipsum dolor.</h3>
+                   <span class="time-posted">3 munites ago</span>
+                  </div>
+                  <div class="actions">
+                 <button class="replycomment"><img src="images/icon-reply.svg" alt="reply icon">Replay</button>
+                  </div>
+                </div>
+                <div class="body_comment">
+                  <p >
+                    <b class="reply-user">@Lorem lorem</b>
+                    <span class="text-comment mycomment">Lorem ipsum dolor sit amet consectetur adipisicing 
+                      elit. Sed non dolorem recusandae libero magni eius, omnis, iusto, harum cum 
+                      tenetur minus inventore consequatur quae aspernatur soluta officiis cumque 
+                      id sunt.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reply-comment-container"></div>
+          <div class="comment mine">
+            <div class="reactions">
+              <div class="likes actlikes">
+                 <div class="counter">
+                  <p class="plus">+</p>
+                  <p class="score">12</p>
+                  <p class="moins">-</p>
+                 </div>
+              </div>
+              <div class="comment-content">
+                <div class="head-comment">
+                  <div class="time-comment">
+                   <img src="images/avatars/image-juliusomo.webp" alt="">
+                   <h3 class="name-comment">Lorem, ipsum dolor.</h3>
+                   <span class="tag_you">you</span>
+                   <span class="time-posted">3 munites ago</span>
+                  </div>
+                  <div class="actions">
+                    <button class="delete"><img src="images/icon-delete.svg" alt="delete">Delete</button>
+                 <button class="edit"><img src="images/icon-edit.svg" alt="edit">Edit</button>
+                  </div>
+                </div>
+                <div class="body_comment">
+                  <p  class="content-comment">
+                   <b class="reply-user">@Lorem lorem</b>
+                   <span class="text-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sed non dolorem recusandae libero magni eius, omnis, iusto, harum cum tenetur
+                      minus inventore consequatur quae aspernatur soluta officiis cumque id sunt.</span>
+            </p>
+                    </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="popup">
+            <div class="content">
+              <h2>Delete comment</h2>
+              <p>Are you sure you want to delete this comment ? this will remove the comment and can't be undone</p>
+            </div>
+          <div class="button-action">
+            <button class="action-delete">Yes , Delete</button>
+            <button class="action-non">No , Cancel</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="comments-container"></div>
+
+      <div class="send">
+        <div class="element-comment">
+          <img src="images/avatars/image-juliusomo.png" alt="myAvatar">
+          <textarea name="" id="" placeholder="Add a comment ..." class="text"></textarea>
+          <button class="sendcomment">SEND</button>
+        </div>
+      </div>
+    </div>
+   </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+
+    <script src="comment.js"></script>
+    <script src="reply.js"></script>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
